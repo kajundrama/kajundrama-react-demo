@@ -1,14 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
 import React, { Component } from 'react';
+import Customer from './components/Customer'
 
+const customer = {
+  'name': 'hong gil dong',
+  'birth': '1011',
+  'gender': 'M',
+  'job': 'Student'
+}
 class App extends Component {
   render() {
     return (
-      <div className="gray-background">
-        <img src={logo} lat="logo"/>
-        <h2>Let's develop kajundrama-react-demo-1</h2>
-      </div>
+      <Customer
+        name={customer.name}
+        birth={customer.birth}
+        gender={customer.gender}
+        job={customer.job} />
     );
   }
 }
